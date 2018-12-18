@@ -1,0 +1,42 @@
+@mixin absolute($top:0, $right:0) {
+  position: absolute;
+  top: $top;
+  right: $right;
+}
+
+.button_group {
+  @include absolute(50%, 50%);
+  a {
+  display: block;
+  }
+}
+
+
+
+.marge--left {
+  float: left;
+  background: black;
+  width: 30%;
+  height: 750%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.marge--right {
+  float: right;
+  background: black;
+  width: 30%;
+  height: 750%;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
