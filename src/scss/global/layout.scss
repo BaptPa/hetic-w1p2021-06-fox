@@ -4,16 +4,23 @@
   right: $right;
 }
 
-.button_group {
+.button__playHelp {
   @include absolute(50%, 50%);
   a {
   display: block;
   }
 }
 
+.title {
+  text-align: center;
+}
 
+.button__credits {
+  text-align: center;
+  margin-top: 55%;
+}
 
-.marge--left {
+.marge__left {
   float: left;
   background: black;
   width: 30%;
@@ -23,7 +30,7 @@
   left: 0;
 }
 
-.marge--right {
+.marge__right {
   float: right;
   background: black;
   width: 30%;
