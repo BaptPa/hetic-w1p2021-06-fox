@@ -15,7 +15,7 @@ oxo.inputs.listenKeys(['left', 'right'], function (key) {   // Move the balloon 
   }
 });
 
-function addBonus() {
+/* function addBonus() {
   // Add a bonus element to the screen at a random position
   var bonus = oxo.elements.createElement({
     class: 'square__ennemy',
@@ -25,14 +25,14 @@ function addBonus() {
         oxo.utils.getRandomNumber(0, xSquares - 1) * size +
         'px, 0px)',
     },
-  });
+  }); 
   setTimeout(addBonus, 500);
   var pos = oxo.animation.getPosition(bonus);
   console.log(pos);
   while (pos.y < 500) {
     setInterval(move, 5);
   }
-}
+}*/
 addBonus();
 
 function move() {
