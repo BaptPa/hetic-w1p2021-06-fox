@@ -1,41 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>To The Top</title>
-</head>
-<body>
-  <section class="Homepage">
-    <div class="marge__left"></div>
-      <div class="title">
-        <h1>To The Top</h1>
-      </div>
-      <div class="button__playHelp">
-        <a class="button--play" href="">Jouer</a>
-        <a class="button--help" href="">Aide</a>
-      </div>
-      <div class="button__credits">
-        <a class="button--credits" href="">Crédits</a>
-      </div>
-    
-    
-    
+  <header>
+    <div class="title">
+        <img src="../img/logo.png">
+    </div>
+  </header>
   
-    
   
+  
+  <section>
+     <div class="buttons"> 
+      <div>      
+        <button id="button--play" class="button">Play</button>
+      </div>
+      <div>
+          <button id="button--help" class="button">Aide</button>
+          <!--<button id="button--help" class="button" onclick="openModal('modal--help')">Aide</button>-->
+      </div>
+     </div>
+     <div class="moves">
+       <img src="../img/buttonLeft.png" class="move move--left"/>
+       <img src="../img/buttonRight.png" class="move move--right"/> 
+     </div>
 
-      
-
-
-
-
-
-
-
-    <div class="marge__right"></div>
+    
   </section>
+
+  <footer>
+    <button id="button--credit" class="button">Crédits</button>
+  </footer>
     
-</body>
-</html>
+  
+  <!-- The Modal HELP-->
+  <div id="modal--help" class="modal">
+      <!-- Modal content -->
+      <div class="modal--content">
+          <span class="close" >&times;</span>
+          <!--<span class="close" onclick="closeModal('modal--help');">&times;</span>-->
+        <p>Some text in the Modal..</p>
+        <p> Go go go Carlo ! </p>
+      </div>
+    </div>
+
+    <!-- The Modal CREDIT-->
+  <div id="modal--credit" class="modal">
+      <!-- Modal content -->
+      <div class="modal--content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+        <p> Go go go Carlo ! </p>
+      </div>
+    </div>
