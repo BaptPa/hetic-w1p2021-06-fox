@@ -1,3 +1,7 @@
+setTimeout(function() {
+  
+});
+
 oxo.inputs.listenKey('space', function () {
   if (oxo.screens.getCurrentScreen !== 'game') {
     oxo.screens.loadScreen('game', game);
@@ -34,14 +38,9 @@ function game() {
       },
     });
     setTimeout(addBonus, 2000);
-    setInterval(move, 2000);
+    setInterval(function() {
+      oxo.animation.move(bonus, 'down', 10); // Move 10px to the right
+    }, 2000);
   }
   addBonus();
-
-  function move() {
-    var bonus = document.querySelectorAll('.square__enemy');
-    for (let i = 0; 1 < bonus.length; i++) {
-      oxo.animation.move(bonus[i], 'down', 10); // Move 10px to the right
-    };
-  };
 };
