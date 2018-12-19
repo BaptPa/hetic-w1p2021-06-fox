@@ -18,7 +18,7 @@ function game() {
     if (key === 'left' && position.x > 0) {
       oxo.animation.move(cube, 'left', 30);
     }
-    if (key === 'right' && position.x < 2590) {
+    if (key === 'right' && position.x < 10000) {
       oxo.animation.move(cube, 'right', 30);
     }
   });
@@ -33,15 +33,10 @@ function game() {
           'px, 0px)',
       },
     });
-    setTimeout(addBonus, 2000);
-    setInterval(move, 2000);
+    setTimeout(addBonus, 1000);
+    setInterval(function () {
+      oxo.animation.move(bonus, 'down', 1); // Move 10px to the right
+    }, 10);
   }
   addBonus();
-
-  function move() {
-    var bonus = document.querySelectorAll('.square__enemy');
-    for (let i = 0; 1 < bonus.length; i++) {
-      oxo.animation.move(bonus[i], 'down', 10); // Move 10px to the right
-    };
-  };
 };
