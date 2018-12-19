@@ -1,6 +1,7 @@
-
-oxo.inputs.listenKeyOnce('enter', function () {
-  oxo.screens.loadScreen('game', game);
+oxo.inputs.listenKey('space', function () {
+  if (oxo.screens.getCurrentScreen !== 'game') {
+    oxo.screens.loadScreen('game', game);
+  }
 });
 
 function game() {
@@ -10,15 +11,15 @@ function game() {
   var xSquares = 1280 / 40; // Number of square on x axis
 
 
-  var cube = document.getElementById('cube'); // Get the cube element
+  var cube = document.getElementById('square'); // Get the cube element
   oxo.inputs.listenKeys(['left', 'right'], function (key) {   // Move the balloon on right or left
     var position = oxo.animation.getPosition(cube);
     console.log(position);
     if (key === 'left' && position.x > 0) {
-      oxo.animation.move(cube, 'left', 20);
+      oxo.animation.move(cube, 'left', 30);
     }
-    if (key === 'right' && position.x < 1280) {
-      oxo.animation.move(cube, 'right', 20);
+    if (key === 'right' && position.x < 2590) {
+      oxo.animation.move(cube, 'right', 30);
     }
   });
 
@@ -35,14 +36,12 @@ function game() {
     setTimeout(addBonus, 2000);
     setInterval(move, 2000);
   }
-
   addBonus();
 
   function move() {
-
     var bonus = document.querySelectorAll('.square__enemy');
     for (let i = 0; 1 < bonus.length; i++) {
-      oxo.animation.move(bonus[i], 'down', 1); // Move 10px to the right
+      oxo.animation.move(bonus[i], 'down', 10); // Move 10px to the right
     };
   };
 };
