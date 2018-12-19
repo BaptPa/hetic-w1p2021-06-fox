@@ -1,8 +1,8 @@
 function test(){
     // Get the button that opens the modal
-    var btn = document.getElementById('button--help');
+    var btn = document.getElementById('buttonHelp');
 }
-newModal("modal--help","button--help");
+
 
 function newModal(ModalName, CallAction){
     // Get the modal
@@ -27,6 +27,9 @@ function newModal(ModalName, CallAction){
     // When the user clicks anywhere outside of the modal, close it
     
 }
+setTimeout(() => {
+    newModal("modal--help","buttonHelp");
+});
 
 function openModal(ModalName){
     // Get the modal
