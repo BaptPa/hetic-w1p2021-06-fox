@@ -1,3 +1,7 @@
+setTimeout(function() {
+  
+});
+
 oxo.inputs.listenKey('space', function () {
   if (oxo.screens.getCurrentScreen !== 'game') {
     oxo.screens.loadScreen('game', game);
@@ -33,10 +37,17 @@ function game() {
           'px, 0px)',
       },
     });
+<<<<<<< HEAD
     setTimeout(addBonus, 1000);
     setInterval(function () {
       oxo.animation.move(bonus, 'down', 1); // Move 10px to the right
     }, 10);
+=======
+    setTimeout(addBonus, 2000);
+    setInterval(function() {
+      oxo.animation.move(bonus, 'down', 10); // Move 10px to the right
+    }, 2000);
+>>>>>>> 7464b9c9e60ec01f07990212bee492e64e3acda2
   }
   addBonus();
 };
