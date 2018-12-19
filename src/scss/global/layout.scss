@@ -85,14 +85,18 @@ footer{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 20px; /* Location of the box */
+  padding-bottom: 20px;
   left: 25%;
-  top: 5%;
-  width: 50%; /* Full width */
-  height: 50%; /* Full height */
+  top: 38%;
+  width: 800px; /* Full width */
+  height: 200px; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(248, 149, 210, 0.9);
   border: solid 1px black;
+  .modal--content--instruction{
+    
+  }
 }
 
 /* Modal Content */
@@ -119,25 +123,5 @@ footer{
   text-decoration: none;
   cursor: pointer;
   transition: 0.4s;
-}
-
-
-.square {
-  width: 50px;
-  height: 50px;
-  background: green;
-  margin-left: 0%;
-  position: relative;
-  top: 80%;
-}
-
-.square__ennemy {
-  width: 50px;
-  height: 50px;
-  background: blue;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: move-to-down 3s linear 1s ;
 }
 
