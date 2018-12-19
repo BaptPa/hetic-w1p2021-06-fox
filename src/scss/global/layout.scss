@@ -17,6 +17,24 @@ body {
   flex-direction: column;
   -webkit-align-items: stretch;
   align-items: stretch;
+  background-image: url(../img/mountains.png);
+  background-repeat: no-repeat;
+  background-position-y: 400px;
+}
+.buttonCredit {
+  float: right;
+  margin-left: 920px;
+  margin-top: -190px;
+  z-index: 2;
+}
+
+.girl {
+  width: 390px;
+  height: 510px;
+  float: right;
+  margin-left: 460px;
+  margin-top: 0px;
+  z-index: 1;
 }
 
 
@@ -39,6 +57,18 @@ section {
   .buttons div{
     margin-bottom: 35px;
   }
+}
+
+.body__consign {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.buttonHelp {
+  float: left;
+  margin-left: 800px;
+  margin-top: 80px;
 }
 
 footer{
@@ -72,7 +102,6 @@ footer{
   font-family: "chewy", sans-serif;
   width: 100px;
   height: 65px;
-  margin-left: 50px;
 }
 
 .press {
