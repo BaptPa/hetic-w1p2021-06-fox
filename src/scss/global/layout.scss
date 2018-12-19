@@ -54,7 +54,6 @@ footer{
   padding-bottom: 15px;
 }
 
-
 .button{
   -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
   -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
@@ -81,63 +80,5 @@ footer{
 
 
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 25%;
-  top: 5%;
-  width: 50%; /* Full width */
-  height: 50%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(148, 37, 37); /* Fallback color */
-  background-color: rgba(206, 15, 15, 0.4); /* Black w/ opacity */
-}
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: black;
-  float: right;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color:red;
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-// game
-.cube {
-  width: 50px;
-  height: 50px;
-  background: green;
-  margin-left: 0%;
-  position: relative;
-  top: 80%;
-}
-
-.square__ennemy {
-  width: 50px;
-  height: 50px;
-  background: blue;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: move-to-down 3s linear 1s ;
-}
 
