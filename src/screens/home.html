@@ -8,17 +8,14 @@
   <section>
      <div class="buttons"> 
       <div>      
-        <button id="button--play" class="button">Jouer</button>
+        <button id="button--play" class="button" onclick='testModal();'>Jouer</button>
       </div>
       <div>
           <button id="buttonHelp" class="button">Aide</button>
           <!--<button id="button--help" class="button" onclick="openModal('modal--help')">Aide</button>-->
       </div>
      </div>
-     <div class="moves">
-       <img src="../img/buttonLeft.png" class="move move--left"/>
-       <img src="../img/buttonRight.png" class="move move--right"/> 
-     </div>
+    
 
     
   </section>
@@ -35,6 +32,10 @@
           <span class="close" >&times;</span>
           <!--<span class="close" onclick="closeModal('modal--help');">&times;</span>-->
               <p class="modal--content--instruction">Dans TO The Top vous devrez éviter les obstacles tout en évoluant dans les airs. <br>Faites le meilleur score, mais soyez attentif. <br>Une erreure ne pardonne pas !</p>
+                <div class="moves">
+                  <img src="../img/buttonLeft.png" class="move move--left"/>
+                  <img src="../img/buttonRight.png" class="move move--right"/> 
+                </div>  
       </div>
     </div>
 

@@ -1,6 +1,6 @@
-function test(){
+function testModal(){
     // Get the button that opens the modal
-    var btn = document.getElementById('buttonHelp');
+    alert('test');
 }
 
 
