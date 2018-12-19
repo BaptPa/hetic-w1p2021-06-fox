@@ -99,7 +99,6 @@ footer{
 .modal--content {
   margin: auto;
   padding: 12vh;
-  width: 80%;
   p {
     color: black;
   }
@@ -121,3 +120,24 @@ footer{
   cursor: pointer;
   transition: 0.4s;
 }
+
+
+.square {
+  width: 50px;
+  height: 50px;
+  background: green;
+  margin-left: 0%;
+  position: relative;
+  top: 80%;
+}
+
+.square__ennemy {
+  width: 50px;
+  height: 50px;
+  background: blue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: move-to-down 3s linear 1s ;
+}
+
