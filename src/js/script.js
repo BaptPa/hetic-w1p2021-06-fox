@@ -1,7 +1,9 @@
-
-oxo.inputs.listenKeyOnce('enter', function () {
-  oxo.screens.loadScreen('game', game);
-});
+oxo.inputs.listenKeysOnce('space', function () {
+ if (oxo.screens.getCurrentScreen() !== 'game') {
+    oxo.screens.loadScreen('game', game);
+  }
+  console.log(key);
+}); 
 
 function game() {
 
