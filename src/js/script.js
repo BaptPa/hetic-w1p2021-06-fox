@@ -8,7 +8,7 @@ function game() {
   var cube;
   var size = 40; // The size of a game square
   var xSquares = 1280 / 40; // Number of square on x axis
-  var ySquares = 800 / 40; // Number of square on y axis
+
 
   var cube = document.getElementById('cube'); // Get the cube element
   oxo.inputs.listenKeys(['left', 'right'], function (key) {   // Move the balloon on right or left
@@ -23,7 +23,6 @@ function game() {
   });
 
   function addBonus() {
-    // Add a bonus element to the screen at a random position
     var bonus = oxo.elements.createElement({
       class: 'square__ennemy',
       styles: {
