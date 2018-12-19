@@ -36,6 +36,7 @@ function game() {
     setTimeout(addBonus, 2000);
     setInterval(move, 2000);
   }
+
   addBonus();
 
   function move() {
