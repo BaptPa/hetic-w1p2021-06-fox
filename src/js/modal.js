@@ -1,10 +1,10 @@
-function testModal(){
+function testModal() {
     // Get the button that opens the modal
     alert('test');
 }
 
 
-function newModal(ModalName, CallAction){
+function newModal(ModalName, CallAction) {
     // Get the modal
     var modal = document.getElementById(ModalName);
     console.log(modal);
@@ -15,28 +15,28 @@ function newModal(ModalName, CallAction){
     var span = modal.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal 
-    btn.onclick = function() {
+    btn.onclick = function () {
         modal.style.display = "block";
     }
 
     // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-     modal.style.display = "none";
+    span.onclick = function () {
+        modal.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
-    
+
 }
 setTimeout(() => {
-    newModal("modal--help","buttonHelp");
-    newModal("modal--credit","buttonCredit");
+    newModal("modal--help", "buttonHelp");
+    newModal("modal--credit", "buttonCredit");
 });
 
-function openModal(ModalName){
+function openModal(ModalName) {
     // Get the modal
     var modal = document.getElementById(ModalName);
     modal.style.display = "block";
 }
-function closeModal(ModalName){
+function closeModal(ModalName) {
     modal.style.display = "none";
 }

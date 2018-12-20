@@ -17,6 +17,28 @@ body {
   flex-direction: column;
   -webkit-align-items: stretch;
   align-items: stretch;
+  background-position-y: 400px;
+}
+
+.main-home {
+  background-image: url(../img/mountains.png);
+  background-repeat: no-repeat;
+}
+
+.buttonCredit {
+  float: right;
+  margin-left: 1300px;
+  margin-top: -190px;
+  z-index: 2;
+}
+
+.girl {
+  width: 390px;
+  height: 510px;
+  float: right;
+  margin-left: 460px;
+  margin-top: 0px;
+  z-index: 1;
 }
 
 
@@ -41,6 +63,22 @@ section {
   }
 }
 
+.body__consign {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.consign__space {
+  text-transform: uppercase;
+}
+
+.buttonHelp {
+  float: left;
+  margin-left: 800px;
+  margin-top: 80px;
+}
+
 footer{
   @include position();
   padding-top: 50px;
@@ -48,39 +86,20 @@ footer{
 }
 
 .button{
-  -moz-box-shadow:inset 0px 1px 0px 0px #54a3f7;
-  -webkit-box-shadow:inset 0px 1px 0px 0px #54a3f7;
-  box-shadow:inset 0px 1px 0px 0px #54a3f7;
-  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #007dc1), color-stop(1, #0061a7));
-  background:-moz-linear-gradient(top, #007dc1 5%, #0061a7 100%);
-  background:-webkit-linear-gradient(top, #007dc1 5%, #0061a7 100%);
-  background:-o-linear-gradient(top, #007dc1 5%, #0061a7 100%);
-  background:-ms-linear-gradient(top, #007dc1 5%, #0061a7 100%);
-  background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#007dc1', endColorstr='#0061a7',GradientType=0);
-  background-color:#007dc1;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-  border-radius:3px;
-  border:1px solid #124d77;
-  display:inline-block;
-  cursor:pointer;
+  background-image: linear-gradient(to right, #88245F 0%, #942D6A 51%, #61093C 100%);
+  border-radius: 10px;
+  border: 1px solid #61093C;
+  display: inline-block;
+  cursor: pointer;
   color:#ffffff;
-  font-size:22px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #154682;
+  font-size: 22px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #154682;
   font-family: "chewy", sans-serif;
   width: 100px;
   height: 65px;
-  margin-left: 50px;
+  transition: transform 0.2s;
 }
-
-.press {
-  color: black;
+.button:hover {
+  transform: scale(1.2);
 }
-
-
-
-
-
-
