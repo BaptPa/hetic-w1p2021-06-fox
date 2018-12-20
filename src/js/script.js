@@ -2,6 +2,7 @@ var birdInterval;
 var meteorInterval;
 var planeInterval;
 var stormInterval;
+var ufoInterval;
 var timer;
 
 oxo.inputs.listenKey('space', function () {
@@ -12,7 +13,7 @@ oxo.inputs.listenKey('space', function () {
 
 function game() {
   setTimeout(function () {
-    stormInterval = setInterval(function () {
+    ufoInterval = setInterval(function () {
       addufo();
     }, 8000);
   }, 70000);
@@ -151,6 +152,7 @@ function game() {
 
 function end() {
   console.log(end);
+  clearInterval(ufoInterval);
   clearInterval(stormInterval);
   clearInterval(meteorInterval);
   clearInterval(birdInterval);
