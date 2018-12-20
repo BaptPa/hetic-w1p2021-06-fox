@@ -8,10 +8,18 @@
     left: 25%;
     top: 38%;
     width: 800px; /* Full width */
+<<<<<<< HEAD
     height: 390px; /* Full height */
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     border: 1px solid rgb(189, 189, 189);
+=======
+    height: 200px; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(248, 149, 210, 0.9);
+    border: solid 1px black;
+    border-radius: 10px;
+>>>>>>> 8e79e51f54e639773b970e83889030cca2bdf6b0
   }
   
   /* Modal Content */

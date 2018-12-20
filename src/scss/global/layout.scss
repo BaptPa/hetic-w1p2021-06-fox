@@ -17,6 +17,7 @@ body {
   flex-direction: column;
   -webkit-align-items: stretch;
   align-items: stretch;
+<<<<<<< HEAD
   background-position-y: 400px;
 }
 
@@ -28,6 +29,15 @@ body {
 .buttonCredit {
   float: right;
   margin-left: 1300px;
+=======
+  background-image: url(../img/mountains.png);
+  background-repeat: no-repeat;
+  background-position-y: 400px;
+}
+.buttonCredit {
+  float: right;
+  margin-left: 920px;
+>>>>>>> 8e79e51f54e639773b970e83889030cca2bdf6b0
   margin-top: -190px;
   z-index: 2;
 }
@@ -69,10 +79,13 @@ section {
   margin-top: 100px;
 }
 
+<<<<<<< HEAD
 .consign__space {
   text-transform: uppercase;
 }
 
+=======
+>>>>>>> 8e79e51f54e639773b970e83889030cca2bdf6b0
 .buttonHelp {
   float: left;
   margin-left: 800px;
@@ -98,7 +111,10 @@ footer{
   font-family: "chewy", sans-serif;
   width: 100px;
   height: 65px;
+<<<<<<< HEAD
   transition: transform 0.2s;
+=======
+>>>>>>> 8e79e51f54e639773b970e83889030cca2bdf6b0
 }
 .button:hover {
   transform: scale(1.2);

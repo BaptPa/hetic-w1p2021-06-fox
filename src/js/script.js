@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 var birdInterval;
 var meteorInterval;
 var planeInterval;
 var stormInterval;
 var timer;
+=======
+>>>>>>> 8e79e51f54e639773b970e83889030cca2bdf6b0
 
 oxo.inputs.listenKey('space', function () {
   if (oxo.screens.getCurrentScreen !== 'game') {
