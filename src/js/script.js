@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 var birdInterval;
 var meteorInterval;
 var planeInterval;
 var stormInterval;
 var timer;
-=======
->>>>>>> 8e79e51f54e639773b970e83889030cca2bdf6b0
 
 oxo.inputs.listenKey('space', function () {
   if (oxo.screens.getCurrentScreen !== 'game') {
@@ -14,7 +11,6 @@ oxo.inputs.listenKey('space', function () {
 });
 
 function game() {
-  setTimeout(disappearBird(), 30000);
   setTimeout(function () {
     stormInterval = setInterval(function () {
       addufo();
@@ -41,13 +37,6 @@ function game() {
   timer = setInterval(function () {
     oxo.player.addToScore(1);
   }, 900);
-
-
-
-  function disappearBird() {
-    clearInterval(birdInterval);
-    clearInterval(planeInterval);
-  }
 
   var balloon = document.getElementById('balloon');
   oxo.inputs.listenKeys(['left', 'right'], function (key) {
@@ -150,7 +139,7 @@ function game() {
     });
     setInterval(function () {
       oxo.animation.move(ufo, 'down', 2, true);
-    }, 1);
+    }, 3);
 
     oxo.elements.onCollisionWithElement(balloon, ufo, function () {
       oxo.screens.loadScreen('end', end);
