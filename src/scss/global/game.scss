@@ -9,10 +9,47 @@
 }
 
 .score__data {
+  animation: score-white 1s ease 75s infinite forwards;
   font-size: 60px;
 }
 .kilometer {
   font-size: 60px;
+  animation: score-white 1s ease 75s infinite forwards;
+}
+
+.game-star1 {
+  display: inline-block;
+  margin: auto;
+  margin-top: 1%;
+  opacity: 0;
+  animation: starlight 2s ease-out 90s infinite alternate;
+}
+.game-star2 {
+  display: inline-block;
+  margin: auto;
+  margin-top: 1%;
+  height: 6%;
+  opacity: 0;
+  animation: starlight 2s ease-out 94s infinite alternate;
+}
+
+
+@keyframes score-white {
+  from {
+    color: #000;
+  }
+  to {
+    color: white;
+  }
+}
+
+@keyframes starlight {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.3;
+  }
 }
 
 
@@ -110,10 +147,10 @@
 }
 
  .balloon {
-  top: 75%;
+  top: 73%;
   position: absolute;
-  width: 140px;
-  height: 240px;
+  width: 120px;
+  height: 260px;
   background-image: url(../img/balloon.png);
   background-size: 100% auto;
   background-repeat: no-repeat;

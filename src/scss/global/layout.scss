@@ -43,9 +43,9 @@ body {
 
 .img-balloon {
   width: 150px;
-  height: 260px;
+  height: 290px;
   position: absolute;
-  left: 35%;
+  left: 33%;
   animation: balloon-move 3s ease-in 2s 1 forwards;
 }
 
@@ -86,7 +86,7 @@ section {
 
 .buttonHelp {
   float: left;
-  margin-left: 800px;
+  margin-left: 920px;
   margin-top: 80px;
 }
 
@@ -137,6 +137,6 @@ footer{
     transform: translate(-500px, -350px)
   }
   100%{
-    transform: translate(-600px, -450px)
+    transform: translate(-630px, -460px)
   }
 }
