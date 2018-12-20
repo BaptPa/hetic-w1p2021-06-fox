@@ -1,6 +1,7 @@
 .title__end {
   margin: auto;
   margin-top: 400px;
+  margin-left: 46%;
   font-size: 200%;
   color: rgba(144, 42, 102, 1);
 }
@@ -14,15 +15,22 @@
 
 .replay {
   margin: auto;
-  margin-bottom: 15%;
+  margin-top: 40%;
+  margin-left: 46%;
   font-size: 30px;
 }
 
-.Endballoon {
+/*.Endballoon {
   position: absolute;
   width: 280px;
   height: 190px;
   background-image: url(../img/balloonMini.png);
   background-size: cover;
   background-repeat: no-repeat;
+  }
+*/
+  .main-end {
+    background-image: url(../img/mountains.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
