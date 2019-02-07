@@ -13,22 +13,40 @@ oxo.inputs.listenKey('space', function () {
 
 function game() {
   setTimeout(function () {
-    ufoInterval = setInterval(function () {
-      addufo();
-    }, 8000);
+    if (oxo.screens.getCurrentScreen() == 'game') {
+      ufoInterval = setInterval(function () {
+        addufo();
+      }, 1000);
+    }
   }, 70000);
   setTimeout(function () {
-    stormInterval = setInterval(function () {
-      addstorm();
-    }, 3500);
+    if (oxo.screens.getCurrentScreen() == 'game') {
+      stormInterval = setInterval(function () {
+        addstorm();
+      }, 2000);
+    }
   }, 30000);
   setTimeout(function () {
-    meteorInterval = setInterval(function () {
-      addMeteor();
-    }, 2000);
+    if (oxo.screens.getCurrentScreen() == 'game') {
+      meteorInterval = setInterval(function () {
+        addMeteor();
+      }, 2000);
+    }
   }, 65000);
   birdInterval = setInterval(addbird, 5000);
   planeInterval = setInterval(addplane, 8000);
+
+  setTimeout(clearbird, 60000);
+  setTimeout(clearstorm, 66000);
+
+  function clearbird() {
+    clearInterval(planeInterval);
+    clearInterval(birdInterval);
+  }
+
+  function clearstorm() {
+    clearInterval(stormInterval);
+  }
 
   var balloon;
   var size = 40;
@@ -62,8 +80,8 @@ function game() {
       },
     });
     setInterval(function () {
-      oxo.animation.move(meteor, 'down', 2, true);
-    }, 5);
+      oxo.animation.move(meteor, 'down', 3, true);
+    }, 8);
 
     oxo.elements.onCollisionWithElement(balloon, meteor, function () {
       oxo.screens.loadScreen('end', end);
@@ -139,8 +157,8 @@ function game() {
       },
     });
     setInterval(function () {
-      oxo.animation.move(ufo, 'down', 2, true);
-    }, 3);
+      oxo.animation.move(ufo, 'down', 3, true);
+    }, 5);
 
     oxo.elements.onCollisionWithElement(balloon, ufo, function () {
       oxo.screens.loadScreen('end', end);

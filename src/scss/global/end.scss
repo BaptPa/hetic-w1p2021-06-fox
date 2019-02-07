@@ -1,28 +1,17 @@
-.title__end {
-  margin: auto;
-  margin-top: 400px;
-  font-size: 200%;
-  color: rgba(144, 42, 102, 1);
-}
-
 .score__end {
-  position: absolute;
-  top: 51%;
-  left: 48%;
-  font-size: 180%;
+  margin-top: 180px;
+  text-align: center;
+  font-size: 100px;
 }
 
-.replay {
-  margin: auto;
-  margin-bottom: 15%;
-  font-size: 30px;
+.title__end {
+  margin-top: 200px;
+  text-align: center;
+  color: rgba(144, 42, 102, 1);
+  font-size: 200px;
 }
 
-.Endballoon {
-  position: absolute;
-  width: 280px;
-  height: 190px;
-  background-image: url(../img/balloonMini.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  }
+.score__data--end {
+  animation: none;
+  font-size: 100px;
+}
